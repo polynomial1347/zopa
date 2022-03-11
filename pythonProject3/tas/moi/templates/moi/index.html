@@ -1,0 +1,21 @@
+{% extends 'moi/base.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block cock %}
+<h1>Главная страница с хуями</h1>
+{% for el in tasks %}
+<div class="alert alert-warning mt-2>">
+    <h3> {{ el.title }}</h3>
+     <p> {{ el.task }}</p>
+
+
+
+</div>
+
+
+{% endfor %}
+{% endblock %}
+
